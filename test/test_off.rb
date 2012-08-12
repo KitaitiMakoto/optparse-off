@@ -54,9 +54,5 @@ class TestOptionParserOff < Test::Unit::TestCase
       assert_equal data[:expected], @opt.getopts(data[:argv])
     end
   end
-
-  def test_regression
-    assert false
-  end
 end
 
