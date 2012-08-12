@@ -3,11 +3,11 @@ Gem::Specification.new do |gem|
   gem.version       = '0.0.1'
   gem.authors       = ["KITAITI Makoto"]
   gem.email         = ["KitaitiMakoto@gmail.com"]
-  gem.description   = %q{TODO: Write a gem description}
-  gem.summary       = %q{TODO: Write a gem summary}
+  gem.description   = %q{Add a functionality which remove options already added to OptionParser}
+  gem.summary       = %q{Add removing-option functionality to OptionParser}
   gem.homepage      = ""
 
-  gem.files         = `git ls-files`.split($/)
+  gem.files         = %w[lib/optparse/off.rb test/test_off.rb README.markdown Rakefile LICENSE.txt optparse-off.gemspec]
   gem.executables   = gem.files.grep(%r{^bin/}).map{ |f| File.basename(f) }
   gem.test_files    = gem.files.grep(%r{^(test|spec|features)/})
   gem.require_paths = ["lib"]
