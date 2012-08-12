@@ -2,6 +2,7 @@ require 'rubygems'
 gem 'test-unit'
 require 'test/unit'
 require 'rake/testtask'
+require 'yard'
 require "bundler/gem_tasks"
 
 task :default => :test
@@ -11,3 +12,5 @@ Rake::TestTask.new do |t|
   dir = File.dirname(__FILE__)
   t.test_files = FileList["#{dir}/test/**/test*.rb"]
 end
+
+YARD::Rake::YardocTask.new
